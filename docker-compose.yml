@@ -7,7 +7,23 @@ services:
       - "27017:27017"
     volumes:
       - mongo_data:/data/db
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    hostname: rabbitmq
+    ports:
+      - "5672:5672"  # 5672, 5671: used by AMQP 0-9-1 and 1.0 clients without and with TLS
+      - "15672:15672" # 15672: HTTP API clients, management UI and rabbitmqadmin (only if the management plugin is enabled)
+      - "61613:61613" # 61613, 61614: STOMP clients without and with TLS (only if the STOMP plugin is enabled)
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+      - rabbitmq_log:/var/log/rabbitmq
+      - "$PWD/enabled_plugins:/etc/rabbitmq/enabled_plugins"
 volumes:
   mongo_data:
+  rabbitmq_data:
+  rabbitmq_log:
 
 #docker rmi -f $(docker images -f "dangling=true" -q)
