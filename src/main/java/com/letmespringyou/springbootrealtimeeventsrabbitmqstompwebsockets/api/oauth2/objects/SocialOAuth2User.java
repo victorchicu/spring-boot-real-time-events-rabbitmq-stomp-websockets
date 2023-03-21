@@ -1,4 +1,4 @@
-package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2;
+package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.objects;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.oauth2.core.oidc.OidcIdToken;
@@ -6,6 +6,7 @@ import org.springframework.security.oauth2.core.oidc.OidcUserInfo;
 import org.springframework.security.oauth2.core.oidc.user.DefaultOidcUser;
 
 import java.util.Collection;
+import java.util.Objects;
 
 public class SocialOAuth2User extends DefaultOidcUser {
     private final OAuth2ExtendedProvider provider;
@@ -32,5 +33,21 @@ public class SocialOAuth2User extends DefaultOidcUser {
 
     public OAuth2ExtendedProvider getProvider() {
         return provider;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (!(o instanceof SocialOAuth2User that))
+            return false;
+        if (!super.equals(o))
+            return false;
+        return provider == that.provider;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), provider);
     }
 }

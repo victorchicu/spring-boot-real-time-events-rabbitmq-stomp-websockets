@@ -1,6 +1,7 @@
-package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2;
+package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.converters;
 
-import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.entity.User;
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.objects.OAuth2ExtendedProvider;
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.users.objects.entity.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.oauth2.core.user.OAuth2User;

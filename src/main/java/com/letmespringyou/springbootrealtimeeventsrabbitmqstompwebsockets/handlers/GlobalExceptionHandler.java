@@ -1,7 +1,7 @@
-package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.handlers;
+package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.handlers;
 
-import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.dto.ErrorDto;
-import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.exceptions.OopsSomethingWentWrong;
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.users.objects.dto.ErrorDto;
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.exceptions.OopsSomethingWentWrong;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

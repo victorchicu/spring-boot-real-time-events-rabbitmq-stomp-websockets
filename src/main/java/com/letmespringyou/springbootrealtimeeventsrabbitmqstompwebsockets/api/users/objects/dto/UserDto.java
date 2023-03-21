@@ -1,6 +1,6 @@
-package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.dto;
+package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.users.objects.dto;
 
-import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.OAuth2ExtendedProvider;
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.objects.OAuth2ExtendedProvider;
 
 public class UserDto {
     private String id;

@@ -1,9 +1,9 @@
-package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.services.impl;
+package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.users.services.impl;
 
-import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.entity.User;
-import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.OAuth2ExtendedProvider;
-import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.repository.UserMongoRepository;
-import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.services.UserService;
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.users.objects.entity.User;
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.objects.OAuth2ExtendedProvider;
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.users.repository.UserMongoRepository;
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.users.services.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

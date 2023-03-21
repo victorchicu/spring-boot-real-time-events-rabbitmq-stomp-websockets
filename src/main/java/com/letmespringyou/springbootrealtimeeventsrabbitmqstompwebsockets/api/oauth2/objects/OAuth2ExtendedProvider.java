@@ -1,4 +1,4 @@
-package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2;
+package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.objects;
 
 import org.springframework.security.config.oauth2.client.CommonOAuth2Provider;
 import org.springframework.security.oauth2.client.registration.ClientRegistration;

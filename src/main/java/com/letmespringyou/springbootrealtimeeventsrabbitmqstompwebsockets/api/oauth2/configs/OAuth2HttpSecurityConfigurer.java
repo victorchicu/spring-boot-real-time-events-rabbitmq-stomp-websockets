@@ -1,5 +1,6 @@
-package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2;
+package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.configs;
 
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.objects.OAuth2ExtendedProvider;
 import org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;

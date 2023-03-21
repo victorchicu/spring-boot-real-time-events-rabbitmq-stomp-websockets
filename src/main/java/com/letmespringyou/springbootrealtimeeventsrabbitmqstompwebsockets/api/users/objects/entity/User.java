@@ -1,6 +1,6 @@
-package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.entity;
+package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.users.objects.entity;
 
-import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.OAuth2ExtendedProvider;
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.objects.OAuth2ExtendedProvider;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;

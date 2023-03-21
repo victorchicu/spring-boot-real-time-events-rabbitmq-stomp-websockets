@@ -1,4 +1,4 @@
-package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.exceptions;
+package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.exceptions;
 
 public class OopsSomethingWentWrong extends RuntimeException {
     public OopsSomethingWentWrong(String message) {

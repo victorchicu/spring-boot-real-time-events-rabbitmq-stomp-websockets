@@ -1,5 +1,7 @@
-package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2;
+package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.configs;
 
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.converters.OAuth2UserConverter;
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.converters.OAuth2UserConverterRegistry;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.oauth2.core.user.OAuth2User;

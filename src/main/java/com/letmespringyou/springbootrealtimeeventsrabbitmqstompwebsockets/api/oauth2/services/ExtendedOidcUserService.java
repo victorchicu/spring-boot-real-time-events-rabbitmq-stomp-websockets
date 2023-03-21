@@ -1,7 +1,9 @@
-package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2;
+package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.services;
 
-import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.entity.User;
-import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.services.UserService;
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.converters.OAuth2UserConverterRegistry;
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.oauth2.objects.SocialOAuth2User;
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.users.objects.entity.User;
+import com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.users.services.UserService;
 import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserRequest;
 import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserService;
 import org.springframework.security.oauth2.core.OAuth2AuthenticationException;

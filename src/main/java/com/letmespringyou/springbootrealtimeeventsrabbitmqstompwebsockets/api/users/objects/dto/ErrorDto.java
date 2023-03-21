@@ -1,4 +1,4 @@
-package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.dto;
+package com.letmespringyou.springbootrealtimeeventsrabbitmqstompwebsockets.api.users.objects.dto;
 
 public class ErrorDto {
     private final String message;
